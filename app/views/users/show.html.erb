@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <link rel="stylesheet" type="text/css" href="profile.css"/>
+  <link rel="stylesheet" type="text/css" href="maincss.css"/>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>My Account</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+	
+  </head>
+  <body>
+  
+    <header>
+		<div class="jumbotron">
+			<div class="container">
+			<div class="pull-right">
+			
+				<h2>
+				
+				    Welcome To Electronic Complaint Portal</h2>
+				<h5>The portal that handles all complaints that you raise against the participant organization</h5>
+			</div>
+			
+	<div id="image"	>	
+ <img src="complaints.png" alt="Thumbnail Image 1" class="img-responsive">
+ </div>
+ 
+			</div> 
+		</div>
+		
+		<div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+		
+			<div class="navcolor">
+			<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					</div>
+				
+				<div class="collpase navbar-collapse" id="example">
+					<ul class="nav navbar-nav">
+						<li><a href="">Company SignUp</a></li>
+						<li><a href="">About Us</a></li>
+						<li><a href="">FAQ</a></li>
+					</ul>
+
+				</div>
+
+			</div>
+			</div>
+			
+			<div class="container">
+			<ol class="breadcrumb">
+				<button type="button" class="btn btn-default" aria-label="Left Align">
+  <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+
+</button>
+  <li class="active">My Profile</li>	
+			</ol>
+		</div>
+		
+			<div class="container">
+			
+		
+		<div class="row">
+  <div class="col-sm-3">
+    <div class="sidebar-nav">
+      <div class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <span class="visible-xs navbar-brand">Menu</span>
+        </div>
+        <div class="navbar-collapse collapse sidebar-navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><%= link_to "Register Complaint", regcomp_path %></li>
+            <li><a href="#">Complaint Status</a></li>
+			<li><a href="Resubmit.html">Resubmit Complaint</a></li>
+			<li><a href="AccountDetail.html">Account Detail</a></li>
+			<li><a href="changePassword.html">Change Password</a></li>
+			<li><a href="#">Logout</a></li>
+            
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-9">
+    <h2>Welcome To Profile</h2>
+	  
+
+                            <div class="input-group col-md-4 pull-right">
+							
+                                <input type="text" class="  search-query form-control" placeholder="Ref no." />
+                                <span class="input-group-btn">
+                                    <button class="btn btn-info" type="button">
+                                        <span class=" glyphicon glyphicon-search"></span>
+                                    </button>
+                                </span>
+                           
+							
+                        </div>
+	
+	<div class="well">
+				<table class="table table-hover">
+					 <tr>
+					    <td><b>Ref no.</b></td>
+					    <td><b>Org no.</b></td>
+					    <td><b>Creation Date</b></td>
+						<td><b>Due Date</b></td>
+					    <td><b>Status</b></td>
+					    <td><b>Summary</b></td>
+					  </tr>
+					  <tr class="info">
+					  <td>ab123</td>
+					    <td>bcd23</td>
+					    <td>22/10/2015</td>
+					    <td>25/10/2015</td>
+					    <td>pending</td>
+					    <td>electronic apliances</td>
+					  </tr>
+					  
+
+				</table>
+			</div>
+  </div>
+</div>
+		
+			
+			
+			
+					</div>
+				
+
+		
+
+
+	<footer>
+		<div class="container">
+			<hr>
+
+			<p>
+				<small><a href="https://facebook.com">Like me</a> On facebook</small></p>
+			<p>	<small><a href="https://twitter.com">Ask whatever </a> On Twitter</small></p>
+			<p>	<small><a href="https://youtube.com">Subscribe me</a> On Youtube</small>
+				
+			</p>
+		</div> <!-- end container -->
+	</footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

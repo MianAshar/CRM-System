@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <link rel="stylesheet" type="text/css" href="maincss.css"/>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>New Account</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+	
+  </head>
+  <body>
+  
+    <header>
+		<div class="jumbotron">
+			<div class="container">
+			<div class="pull-right">
+			
+				<h2>
+				
+				    Welcome To Electronic Complaint Portal</h2>
+				<h5>The portal that handles all complaints that you raise against the participant organization</h5>
+			</div>
+			
+	<div id="image"	>	
+ <img src="complaints.png" alt="Thumbnail Image 1" class="img-responsive">
+ </div>
+ 
+			</div> 
+		</div>
+		
+		<div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+		
+			<div class="navcolor">
+			<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					</div>
+				
+				<div class="collpase navbar-collapse" id="example">
+					<ul class="nav navbar-nav">
+						<li><a href="">Company SignUp</a></li>
+						<li><a href="">About Us</a></li>
+						<li><a href="">FAQ</a></li>
+					</ul>
+
+				</div>
+
+			</div>
+			</div>
+			
+			<div class="container">
+			<ol class="breadcrumb">
+				<button type="button" class="btn btn-default" aria-label="Left Align">
+  <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+
+</button>
+  <li class="active">New User</li>	
+			</ol>
+		</div>
+		<%=  form_for(@user) do |f| %>
+			<div class="container">
+			<div class="panel panel-default panel-info">
+				<div class="panel-heading"><h4 class="panel-title">User Information</h4></div>
+				<div class="panel-body">
+					
+					<form action="">
+			<div class="col-lg-5">
+			      		<%= f.label :First_Name %><br>
+			      		<%= f.text_field :Fname, { :class => 'form-control', :placeholder => 'First Name' } %><br>
+
+			      		<%= f.label :Last_Name %><br>
+			      		<%= f.text_field :LName, { :class => 'form-control', :placeholder => 'Last Name' } %><br>
+
+			      		<%= f.label :Age %><br>
+			      		<%= f.text_field :Age, { :class => 'form-control', :placeholder => '24' } %><br>
+			      		
+			      		<%= f.label :CNIC_No %><br>
+			      		<%= f.text_field :CNICno, { :class => 'form-control', :placeholder => 'XXXXX-XXXXXXXX-X' } %><br>
+			      		
+			      		</div>
+				
+					
+				</div>
+			</div>
+			
+			
+			<div class="panel panel-default panel-info">
+				<div class="panel-heading"><h4 class="panel-title">Contact Information</h4></div>
+				<div class="panel-body">
+					
+					<form action="">
+			<div class="col-lg-5">
+			      		<%= f.label :Phone_No %><br>
+			      		<%= f.text_field :PhnNo, { :class => 'form-control', :placeholder => '0423-XXXXXXX' } %><br>
+						
+			      		<%= f.label :Mobile_No %><br>
+			      		<%= f.text_field :MobileNo, { :class => 'form-control', :placeholder => '03XX-XXXXXXX' } %><br>
+						
+						 
+			      		<%= f.label :Email %><br>
+			      		<%= f.text_field :email, { :class => 'form-control', :placeholder => 'abcd@gmail.com' } %><br>
+
+					</div>
+				
+					
+				</div>
+			</div>
+			
+			<div class="panel panel-default panel-info">
+				<div class="panel-heading"><h4 class="panel-title">Account Information</h4></div>
+				<div class="panel-body">
+					
+					<form action="">
+			<div class="col-lg-5">
+			
+			      		<%= f.label :Username %><br>
+			      		<%= f.text_field :Username, { :class => 'form-control', :placeholder => 'Username' } %><br>
+						
+			      		<%= f.label :Password %><br>
+			      		<%= f.password_field :password, { :class => 'form-control', :placeholder => '********' } %><br>
+						
+						<%= f.label :password_confirmation, "Confirm Password" %><br>
+			      		<%= f.password_field :password_confirmation, { :class => 'form-control', :placeholder => '********' } %><br>
+						
+						
+						
+					</div>	
+				</div>
+			</div>
+			<div class="row">
+						<%= f.submit "Create Account", class: "btn btn-primary" %>
+ 						<%= link_to "Cancel", rootpage_path, class:"btn btn-danger" %><br><br>
+
+
+		 <% end %>
+			</div>
+				
+
+		
+
+
+	<footer>
+		<div class="container">
+			<hr>
+
+			<p>
+				<small><a href="https://facebook.com">Like me</a> On facebook</small></p>
+			<p>	<small><a href="https://twitter.com">Ask whatever </a> On Twitter</small></p>
+			<p>	<small><a href="https://youtube.com">Subscribe me</a> On Youtube</small>
+				
+			</p>
+		</div> <!-- end container -->
+	</footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
